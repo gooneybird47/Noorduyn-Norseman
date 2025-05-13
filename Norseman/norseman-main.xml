@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <description>Norseman</description>
+    <author>Brett Harrison</author>  
+    <path>Models/norseman.ac</path>
+
+    <offsets>
+        <pitch-deg>10.4</pitch-deg>
+    </offsets>   
+
+        <animation>
+    <name>propall</name>
+    <object-name>prop</object-name>
+    <object-name>propdisc</object-name>
+   </animation>
+    
+    <animation>
+    <type>select</type>
+    <object-name>propdisc</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>30</value>
+      </greater-than>
+    </condition>
+  </animation>
+    
+      <animation>
+    <type>select</type>
+    <object-name>prop</object-name>
+    <condition>
+      <less-than>
+        <property>velocities/true-airspeed-kt</property>
+        <value>35</value>
+      </less-than>
+    </condition>
+  </animation>
+    
+      <animation>
+    <type>spin</type>
+    <object-name>propall</object-name>
+    <property>velocities/true-airspeed-kt</property>
+    <factor>27</factor>
+    <center>
+      <x-m> -2.193 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 1.922 </z-m>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+   </animation>
+
+    <animation>
+        <type>rotate</type>
+        <property>velocities/true-airspeed-kt</property>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>0.0</dep>
+            </entry>
+
+            <entry>
+                <ind>35</ind>
+                <dep>0.0</dep>
+            </entry>
+
+            <entry>
+                <ind>50</ind>
+                <dep>-10.4</dep>
+            </entry>
+
+        </interpolation>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <!-- ALS Navigation Lights Objects -->
+<!--     <model>
+        <path>Lights/decathlon-NavLights.xml</path>
+    </model> -->
+
+</PropertyList>
