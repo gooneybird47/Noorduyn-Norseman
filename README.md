@@ -8,6 +8,7 @@
 ![norseman-35393-2](screenshots/norseman-35393-2.jpg)
 ![norseman-CF-ZMX](screenshots/norseman-CF-ZMX.jpg)
 ![norseman-SE-CGM](screenshots/norseman-SE-CGM.jpg)
+![norseman-CF-JIN](screenshots/norseman-CF-JIN.jpg)
 
 
 Download the zip file and extract the "Norseman" folder into the "$FG_ROOT/AI/Aircraft" folder.
