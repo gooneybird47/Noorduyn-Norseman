@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<PropertyList include="norseman-main.xml">
+
+ <texture-path>Textures/Sweden</texture-path>
+
+</PropertyList>
